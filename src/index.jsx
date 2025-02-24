@@ -11,7 +11,7 @@ export function App() {
 			<Header />
 			<main>
 				<Router>
-					<Route path="/" component={Home} />
+					<Route path="/" component={NotFound} />
 					<Route default component={NotFound} />
 				</Router>
 			</main>
