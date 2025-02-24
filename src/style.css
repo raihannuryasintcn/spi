@@ -14,24 +14,61 @@
 }
 
 body {
+	display: flex;
+	width: 100;
+	padding: 34px 140px 38px 140px;
 	margin: 0;
+	justify-content: center;
+	align-items: center;
+	background: url(assets/background.png) lightgray 50% / cover no-repeat;
 }
 
-#app {
+/* #app {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
-}
+} */
 
 header {
 	display: flex;
-	justify-content: flex-end;
-	background-color: #673ab8;
+	width: 1000px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.HeaderBanner1 {
+	width: 1000px;
+	height: 90px;
+	background: url('assets/HeaderBanner1.png') lightgray 50% / contain no-repeat;
+}
+
+.HeaderCarousel {
+	width: 1000px;
+	height: 350px;
+	aspect-ratio: 20/7;
+	background: url('assets/HeaderCarousel.jpg') lightgray 50% / cover no-repeat;
 }
 
 header nav {
 	display: flex;
+	width: 1000px;
+	height: 40px;
+	justify-content: flex-end;
+	align-items: flex-start;
+	background: var(--RED-GRADIENT, linear-gradient(0deg, #B43947 6.88%, #F87786 93.12%));
 }
+
+
+footer {
+	display: inline-flex;
+	width: 1000px;
+	height: 120px;
+	align-items: center;
+	flex-shrink: 0;
+	background: #282A70;
+}
+
 
 header a {
 	color: #fff;
