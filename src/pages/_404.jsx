@@ -1,8 +1,8 @@
 export function NotFound() {
 	return (
 		<section>
-			<h1>404: Not Found</h1>
-			<p>It's gone :(</p>
+			<h1>Dalam Pengerjaan</h1>
+			<p>Sabar ya bos... websitenya lagi dibikin</p>
 		</section>
 	);
 }
