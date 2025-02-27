@@ -1,4 +1,3 @@
-
 .GridContainer{
     display: grid;
     grid-template-columns: 75% auto;
@@ -12,5 +11,5 @@
 
 .Sidebar{
 
-    background: whitesmoke;
+    background: #ececec;
 }
