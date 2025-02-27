@@ -5,7 +5,7 @@ export function Header() {
 
 	return (
 		<header>
-			<div className="HeaderBanner1"></div>
+			<div className="HeaderBanner"></div>
 			<div className="HeaderCarousel"></div>
 			<nav></nav>
 		</header>

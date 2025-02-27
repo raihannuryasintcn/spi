@@ -40,7 +40,7 @@ header {
 .HeaderBanner1 {
 	width: 1000px;
 	height: 90px;
-	background: url('assets/HeaderBanner1.png') lightgray 50% / contain no-repeat;
+	background: url('assets/HeaderBanner.png') lightgray 50% / contain no-repeat;
 }
 
 .HeaderCarousel {
