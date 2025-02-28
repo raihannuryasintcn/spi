@@ -10,6 +10,13 @@
     background: #FFF;}
 
 .Sidebar{
+    width: 250px;
+    height: 1000px;
+    flex-shrink: 0;
 
     background: #ececec;
+}
+
+.wrapper{
+    margin: 20px;
 }

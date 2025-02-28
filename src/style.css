@@ -37,7 +37,7 @@ header {
 	align-items: flex-start;
 }
 
-.HeaderBanner1 {
+.HeaderBanner {
 	width: 1000px;
 	height: 90px;
 	background: url('assets/HeaderBanner.png') lightgray 50% / contain no-repeat;
@@ -104,4 +104,55 @@ main {
 		color: #ccc;
 		background-color: #1a1a1a;
 	}
+}
+
+
+strong {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin: 10px auto;
+	flex-shrink: 0;
+	font-size: medium;
+	color: #4C50D6;
+}
+
+.SidebarHeader{
+	display: flex;	
+	height: 32px;
+	padding: 0px 0px;
+	justify-content: center;
+	align-items: center;
+	background: var(--BLUE-GRADIENT, linear-gradient(0deg, #282A70 0%, #7273A0 100%));
+}
+
+.SidebarBody{
+	display: flex;
+	height: 156px;
+	justify-content: center;
+	align-items:center;
+	gap: 17px;
+	margin-bottom: 15px;
+	background: #FFF;
+}
+
+.LogoBackground{
+	width: 47px;
+	height: 47px;
+	flex-shrink: 0;
+    background-image: url("../src/assets/Ellipse.svg"); /* Replace with your SVG's path */
+}
+
+.FlagIndo{
+	width: 77px;
+	height: 47px;
+	flex-shrink: 0;
+    background-image: url("../src/assets/indo.svg"); /* Replace with your SVG's path */
+}
+
+.FlagUK{
+	width: 47px;
+	height: 47px;
+	flex-shrink: 0;
+    background-image: url("../src/assets/uk.svg"); /* Replace with your SVG's path */
 }
