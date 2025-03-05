@@ -51,7 +51,7 @@ const LogoMarquee = () => {
 
   return (
     <div className="relative w-full overflow-hidden py-8 group">
-      <div className="flex animate-marquee group-hover:animate-pause">
+      <div className="flex animate-marquee">
         {/* Double the logos to create seamless loop */}
         {[...logos, ...logos].map((logo, index) => (
           <div 
