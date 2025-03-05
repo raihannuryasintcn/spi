@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Heading } from '../components/Heading';
 import { Sidebar } from '../components/Sidebar';
-import MainBanner from '../assets/MainBanner.png'
+import main from '../assets/main.png'
 
 
 // Import available images
@@ -36,7 +36,7 @@ export function Gallery() {
         <div className="grid grid-cols-12 w-full h-auto">
             <div className="bg-gray-100 w-full p-4 col-span-9">
             <div className="flex items-center pb-4">
-                    <img src={MainBanner} alt="" className="object-fill"/>
+                    <img src={main} alt="" className="object-fill"/>
                 </div>
                 <Heading title="GALERI"/>
                 <div className="relative py-4">

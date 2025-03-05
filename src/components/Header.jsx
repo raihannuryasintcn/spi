@@ -1,5 +1,6 @@
 import { useLocation } from 'preact-iso';
 import { Carousel } from './Carousel'; // Import the Carousel component
+import header from '../assets/header.png'
 
 
 export function Header() {
@@ -18,7 +19,7 @@ export function Header() {
 
 	return (
 		<header className="w-full h-auto bg-gray-500">
-			<img src="../src/assets/HeaderBanner.png" alt="" className="object-fill" />
+			<img src={header} alt="" className="object-fill" />
 
 			{/*CAROUSEL HERE*/}
 			< Carousel />
