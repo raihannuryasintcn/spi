@@ -1,11 +1,10 @@
 import { LocationProvider, Router, Route, hydrate, prerender as ssr } from 'preact-iso';
 
 import { Header } from './components/Header.jsx';
-import { Home1 } from './pages/Home1/index.jsx';
 import { NotFound } from './pages/_404.jsx';
 import './style.css';
 import { Footer } from './components/Footer.jsx';
-import { Home } from './pages/Home/index.jsx';
+import {  Home } from './pages/Home.jsx';
 
 export function App() {
 	return (
@@ -14,6 +13,12 @@ export function App() {
 			<main>
 				<Router>
 					<Route path="/" component={Home} />
+					{/* <Route path="/about" component={} />
+					<Route path="/gallery" component={} />
+					<Route path="/services" component={} />
+					<Route path="/clients" component={} />
+					<Route path="/sewa" component={} />
+					<Route path="/contact" component={} /> */}
 					<Route default component={NotFound} />
 				</Router>
 			</main>
