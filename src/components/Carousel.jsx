@@ -3,11 +3,11 @@ import { useState, useEffect, useRef } from 'preact/hooks';
 export function Carousel() {
   // Array of image paths - replace with your actual image paths
   const images = [
-    '../src/assets/bareng.jpg',
-    '../src/assets/bareng2.jpg',
-    '../src/assets/bareng3.jpg',
-    '../src/assets/carousel4.jpg',
-    '../src/assets/carousel5.jpg'
+    '../src/assets/carousel/1.jpg',
+    '../src/assets/carousel/2.jpg',
+    '../src/assets/carousel/3.jpg',
+    '../src/assets/carousel/4.jpg',
+    '../src/assets/carousel/5.jpg'
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

@@ -5,6 +5,12 @@ import { NotFound } from './pages/_404.jsx';
 import './style.css';
 import { Footer } from './components/Footer.jsx';
 import {  Home } from './pages/Home.jsx';
+import { About } from './pages/About.jsx';
+import { Gallery } from './pages/Gallery.jsx';
+import { Products } from './pages/Products.jsx';
+import { Clients } from './pages/Clients.jsx';
+import { Sewa } from './pages/Sewa.jsx';
+import { Contact } from './pages/Contact.jsx';
 
 export function App() {
 	return (
@@ -13,12 +19,14 @@ export function App() {
 			<main>
 				<Router>
 					<Route path="/" component={Home} />
-					{/* <Route path="/about" component={} />
-					<Route path="/gallery" component={} />
-					<Route path="/services" component={} />
-					<Route path="/clients" component={} />
-					<Route path="/sewa" component={} />
-					<Route path="/contact" component={} /> */}
+					<Route path="/about" component={About} />
+					<Route path="/gallery" component={Gallery} />
+					<Route path="/products" component={Products} />
+					<Route path="/clients" component={Clients} />
+					<Route path="/sewa" component={Sewa} />
+					<Route path="/contact" component={Contact} />
+					<Route path="/legalitas" component={About} />
+
 					<Route default component={NotFound} />
 				</Router>
 			</main>
@@ -27,9 +35,9 @@ export function App() {
 	);
 }
 
-if (typeof window !== 'undefined') {
-	hydrate(<App />, document.getElementById('app'));
-}
+	if (typeof window !== 'undefined') {
+		hydrate(<App />, document.getElementById('app'));
+	}
 
 export async function prerender(data) {
 	return await ssr(<App {...data} />);
