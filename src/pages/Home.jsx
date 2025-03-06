@@ -8,6 +8,9 @@ export function Home(){
     return(
         <div className="grid grid-cols-12 w-full h-auto">
             <div className="bg-gray-100 w-full p-4 col-span-9">
+                <div className="text-red-500 italic">
+                    <marquee behavior="scroll" direction="left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet delectus harum voluptatum excepturi rerum illum cum sint earum perferendis labore.</marquee>
+                </div>
 
                 <div className="flex items-center pb-4">
                     <img src={main} alt="" className="object-fill"/>
