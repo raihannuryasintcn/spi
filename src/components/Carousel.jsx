@@ -1,10 +1,10 @@
 import { useState, useEffect, useRef } from 'preact/hooks';
 
-import carousel1 from '../assets/carousel/1.jpg'
-import carousel2 from '../assets/carousel/2.jpg'
-import carousel3 from '../assets/carousel/3.jpg'
-import carousel4 from '../assets/carousel/4.jpg'
-import carousel5 from '../assets/carousel/5.jpg'
+import carousel1 from '../assets/carousel/1.webp'
+import carousel2 from '../assets/carousel/2.webp'
+import carousel3 from '../assets/carousel/3.webp'
+import carousel4 from '../assets/carousel/4.webp'
+import carousel5 from '../assets/carousel/5.webp'
 
 export function Carousel() {
   // Array of image paths - replace with your actual image paths
