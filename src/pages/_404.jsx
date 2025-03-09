@@ -1,5 +1,5 @@
 export function NotFound() {
 	return (
-		<div className=""></div>
+		<div className="">Not Found</div>
 	);
 }

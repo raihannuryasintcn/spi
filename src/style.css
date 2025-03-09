@@ -3,3 +3,14 @@
 @tailwind utilities;
 
 /* Custom styles can be added below this line */
+
+@media (max-width: 767px) {
+    body {
+      transform: scale(0.35);
+      transform-origin: top left;
+      width: 280%; /* 1/0.25 = 4 → 400% */
+      height: 100vh;
+      overflow-x: hidden;
+      margin: 0;
+    }
+}
