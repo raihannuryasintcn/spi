@@ -27,7 +27,7 @@ const certificatesData = [
 function CertificateCard({ certificate }) {
     return (
         <div className="bg-white shadow-md p-4">
-            <img src={certificate.image} alt={certificate.name} className="w-full h-48 object-fill mb-4 rounded" />
+            <img src={certificate.image} alt={certificate.name} className="w-full h-48 object-contain mb-4" />
             <h3 className="text-lg font-semibold mb-2">{certificate.name}</h3>
             <p className="text-sm text-gray-600">{certificate.description}</p>
         </div>
@@ -64,7 +64,7 @@ export function About() {
 
 
                 <Heading title="LEGALITAS"/>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 py-4">
+                <div className="grid grid-cols-2 gap-6 py-4">
                     {certificatesData.map((certificate) => (
                         <CertificateCard key={certificate.id} certificate={certificate} />
                     ))}
