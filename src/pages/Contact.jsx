@@ -8,7 +8,7 @@ export function Contact(){
         <div className="grid grid-cols-12 w-full h-auto">
             <div className="bg-gray-100 w-full p-4 col-span-9">
                 <div className="text-red-500 italic">
-                    <marquee behavior="scroll" direction="left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet delectus harum voluptatum excepturi rerum illum cum sint earum perferendis labore.</marquee>
+                <marquee behavior="scroll" direction="left">Kami menjunjung tinggi nilai kepercayaan, etika, moral, dan kejujuran di setiap langkah dalam melakukan kegiatan dan pengambilan keputusan.</marquee>
                 </div>
                 <div className="flex items-center pb-4">
                     <img src={main} alt="" className="object-fill"/>
@@ -19,9 +19,13 @@ export function Contact(){
                         
                         <h1 className="text-gray-700 text-xl pb-4 font-semibold">PT SCARLET POWER INDONESIA</h1>
                         <h1 className="text-gray-700 text-xl pb-4 font-semibold">OFFICE/WORKSHOP</h1>
-                        <p className="text-gray-600 pr-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates maxime placeat animi dignissimos, dolore possimus!</p>
+                        <p className="text-gray-600 pr-4">Komplek Ruko Melawai Blok B No. 25 Taman      Lembah Hijau Lippo Cikarang Bekasi 17550</p>
                         <h1 className="text-gray-700 text-xl py-4 font-semibold">CONTACT PERSON</h1>
-                        <p className="text-gray-600 pr-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates maxime placeat animi dignissimos, dolore possimus!</p>
+                        <p className="text-gray-600 pr-4">Telp	:  021- 8990 2463/ 8990  </p>
+                        <p className="text-gray-600 pr-4">Fax	:  021- 8990 2599 </p>
+                        <p className="text-gray-600 pr-4">Email	:  scarlet_powerindonesia@yahoo.co.id </p>
+                                                        
+                                                              
 
                     </div>
 
