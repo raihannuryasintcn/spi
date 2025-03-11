@@ -96,7 +96,7 @@ const products = [
   {
     id: 12,
     name: 'AC Split Panasonic 2 PK',  
-    image: 'src/assets/produk/panasonic12.png',  
+    image: 'src/assets/produk/panasonic12git commit -m "Menambahkan fitur baru".png',  
     description: 'AC Split PANASONIC 2 PK dengan teknologi inverter hemat energi dan desain modern.',  
     type: 'split',  
     brand: 'panasonic'  
