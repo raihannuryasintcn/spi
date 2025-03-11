@@ -53,6 +53,86 @@ const equipmentData = [
         type: 'ducting',
         brand: 'panasonic',
     },
+    {
+        id: 7,
+        name: 'AC Standing LG 2 PK',
+        image: 'https://via.placeholder.com/150?text=AC+Standing+LG',
+        description: 'AC Standing LG 2 PK dengan teknologi Dual Inverter untuk penghematan energi optimal.',
+        type: 'standing',
+        brand: 'lg',
+    },
+    {
+        id: 8,
+        name: 'AC Split Gree 2 PK',
+        image: 'https://via.placeholder.com/150?text=AC+Split+Gree+2PK',
+        description: 'AC Split Gree 2 PK dengan fitur auto clean dan filter anti bakteri untuk udara lebih sehat.',
+        type: 'split',
+        brand: 'gree',
+    },
+    {
+        id: 9,
+        name: 'AC Cassette Daikin 3 PK',
+        image: 'https://via.placeholder.com/150?text=AC+Cassette+Daikin',
+        description: 'AC Cassette Daikin 3 PK untuk ruang luas dengan distribusi udara 360 derajat.',
+        type: 'cassette',
+        brand: 'daikin',
+    },
+    {
+        id: 10,
+        name: 'AC Split Panasonic 2 PK',
+        image: 'https://via.placeholder.com/150?text=AC+Split+Panasonic',
+        description: 'AC Split Panasonic 2 PK dengan nanoe-G untuk membersihkan udara dari partikel berbahaya.',
+        type: 'split',
+        brand: 'panasonic',
+    },
+    {
+        id: 11,
+        name: 'AC Cassette LG 2.5 PK',
+        image: 'https://via.placeholder.com/150?text=AC+Cassette+LG',
+        description: 'AC Cassette LG 2.5 PK dengan teknologi 4-way swing untuk penyebaran udara yang optimal.',
+        type: 'cassette',
+        brand: 'lg',
+    },
+    {
+        id: 12,
+        name: 'AC Ducting Gree 5 PK',
+        image: 'https://via.placeholder.com/150?text=AC+Ducting+Gree',
+        description: 'AC Ducting Gree 5 PK untuk area sangat luas dengan efisiensi energi tinggi.',
+        type: 'ducting',
+        brand: 'gree',
+    },
+    {
+        id: 13,
+        name: 'AC Standing Daikin 5 PK',
+        image: 'https://via.placeholder.com/150?text=AC+Standing+Daikin',
+        description: 'AC Standing Daikin 5 PK untuk ruangan besar dengan kemampuan pendinginan cepat.',
+        type: 'standing',
+        brand: 'daikin',
+    },
+    {
+        id: 14,
+        name: 'AC Split LG 1 PK',
+        image: 'https://via.placeholder.com/150?text=AC+Split+LG',
+        description: 'AC Split LG 1 PK dengan teknologi Dual Cool Inverter untuk penghematan energi hingga 70%.',
+        type: 'split',
+        brand: 'lg',
+    },
+    {
+        id: 15,
+        name: 'AC Standing Gree 3 PK',
+        image: 'https://via.placeholder.com/150?text=AC+Standing+Gree',
+        description: 'AC Standing Gree 3 PK dengan desain modern dan sistem anti-korosi untuk ketahanan ekstra.',
+        type: 'standing',
+        brand: 'gree',
+    },
+    {
+        id: 16,
+        name: 'AC Ducting LG 3 PK',
+        image: 'https://via.placeholder.com/150?text=AC+Ducting+LG',
+        description: 'AC Ducting LG 3 PK dengan sistem Smart Diagnosis untuk pemeliharaan yang lebih mudah.',
+        type: 'ducting',
+        brand: 'lg',
+    },
 ];
 
 function EquipmentCard({ equipment }) {
@@ -84,7 +164,8 @@ export function Products() {
         <div className="grid grid-cols-12 w-full h-auto">
             <div className="bg-gray-100 w-full p-4 col-span-9">
                 <div className="text-red-500 italic">
-                <marquee behavior="scroll" direction="left">Kami menjunjung tinggi nilai kepercayaan, etika, moral, dan kejujuran di setiap langkah dalam melakukan kegiatan dan pengambilan keputusan.</marquee>
+                <marquee behavior="scroll" direction="left">
+                Selamat Datang di Website resmi PT Scarlet Power Indonesia semoga para pengunjung dapat memperoleh informasi yang bermanfaat di website ini</marquee>                
                 </div>
                 <div className="flex items-center pb-4">
                     <img src={main} alt="" className="object-fill"/>
@@ -111,6 +192,7 @@ export function Products() {
                         <option value="gree">Gree</option>
                         <option value="daikin">Daikin</option>
                         <option value="panasonic">Panasonic</option>
+                        <option value="lg">LG</option>
                     </select>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-4">
