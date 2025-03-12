@@ -3,8 +3,7 @@ import { Heading } from '../components/Heading';
 import { Sidebar } from '../components/Sidebar';
 import main from '../assets/main.png';
 
-// Products array
-const products = [
+const equipmentData = [
   {
     id: 1,
     name: 'AC Cassette 1 PK',
@@ -88,7 +87,7 @@ const products = [
   {
     id: 11,
     name: 'AC Standing Panasonic 5 PK',  
-    image: 'src/assets/produk/panasonic11.png',  
+    image: 'src/assets/produk/panasonic12.png',  
     description: 'AC Standing PANASONIC 5 PK dengan daya pendinginan kuat dan cocok untuk ruangan besar.',  
     type: 'standing',  
     brand: 'panasonic',  
@@ -96,7 +95,7 @@ const products = [
   {
     id: 12,
     name: 'AC Split Panasonic 2 PK',  
-    image: 'src/assets/produk/panasonic12git commit -m "Menambahkan fitur baru".png',  
+    image: 'src/assets/produk/panasonic11.png',  
     description: 'AC Split PANASONIC 2 PK dengan teknologi inverter hemat energi dan desain modern.',  
     type: 'split',  
     brand: 'panasonic'  
@@ -108,7 +107,6 @@ const products = [
     description: 'AC Cassette LG 7 PK dengan kapasitas pendinginan besar dan teknologi hemat energi.',  
     type: 'cassette',  
     brand: 'lg',  
-
   },
   {
     id: 14,
@@ -153,15 +151,19 @@ export function Products() {
   const [typeFilter, setTypeFilter] = useState('all');
   const [brandFilter, setBrandFilter] = useState('all');
 
-  // Filtering logic
-  const filteredEquipment = products.filter(equipment => {
-    const typeMatch = typeFilter === 'all' || equipment.type.toLowerCase() === typeFilter.toLowerCase();
-    const brandMatch = brandFilter === 'all' || equipment.brand.toLowerCase() === brandFilter.toLowerCase();
-    return typeMatch && brandMatch;
-  });
+  // Menambahkan handler yang hilang
+  const handleTypeChange = (e) => {
+    setTypeFilter(e.target.value);
+  };
 
-  const handleTypeChange = (e) => setTypeFilter(e.target.value);
-  const handleBrandChange = (e) => setBrandFilter(e.target.value);
+  const handleBrandChange = (e) => {
+    setBrandFilter(e.target.value);
+  };
+
+  const filteredEquipment = equipmentData.filter(equipment => {
+    return (typeFilter === 'all' || equipment.type === typeFilter) &&
+           (brandFilter === 'all' || equipment.brand === brandFilter);
+  });
 
   return (
     <div className="grid grid-cols-12 w-full h-auto">
