@@ -39,9 +39,10 @@ export function About() {
         <div className="grid grid-cols-12 w-full h-auto">
             <div className="bg-gray-100 w-full p-4 col-span-9">
                 <div className="text-red-500 italic">
-                    <marquee behavior="scroll" direction="left"> Kami menjunjung tinggi nilai kepercayaan, etika, moral, dan kejujuran di setiap langkah dalam melakukan kegiatan dan pengambilan keputusan.</marquee>
+                <marquee behavior="scroll" direction="left">
+                Selamat Datang di Website resmi PT Scarlet Power Indonesia semoga para pengunjung dapat memperoleh informasi yang bermanfaat di website ini</marquee>               
                 </div>
-
+                
                 <div className="flex items-center pb-4">
                     <img src={main} alt="" className="object-fill"/>
                 </div>
