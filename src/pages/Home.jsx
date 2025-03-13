@@ -23,15 +23,11 @@ export function Home() {
                 {/* Profil Perusahaan */}
                 <Heading title="PROFIL SPI AC SPECIALIST" />
                 <p className="text-gray-600 py-4 text-left" style={{ textAlign: "justify" }}>
-                    PT. Scarlet Power Indonesia adalah perusahaan outsource service yang bergerak dalam bidang AC (Air Conditioner). 
-                    Layanan kami mencakup penjualan, pemasangan, perawatan, dan servis AC. Didukung oleh tim teknisi yang berpengalaman dan profesional, 
-                    kami berkomitmen untuk memberikan layanan berkualitas yang memenuhi kebutuhan setiap pelanggan.
+                Saat ini kenyamanan ruangan menjadi perhatian banyak pihak, terutama bagi dunia industri. Kecenderungan meningkatnya kebutuhan akan lingkungan kerja yang nyaman merupakan sinyalemen bahwa begitu pentingnya sistem pendingin udara yang optimal. Yang pada akhirnya sistem AC yang handal dan profesional harus diterapkan dan disesuaikan untuk memenuhi kebutuhan klien.
                 </p>
 
-                <h1 className="text-blue-500 pb-4 text-xl font-semibold" style={{ textAlign: "justify" }}>
-                    Dalam hal teknis perawatan, kami menerapkan standar terhadap prosedur kerja, pendukung kerja, prinsip "Safety First," serta tanggung jawab dari setiap teknisi kami. 
-                    Kepuasan pelanggan merupakan prioritas utama. Guna mendukung hasil kerja yang maksimal, setiap teknisi dibekali dengan peralatan yang memadai. 
-                    Perawatan rutin yang terencana dengan baik dapat mencegah kerusakan unit AC, mengurangi biaya tidak terduga, serta meminimalkan risiko penggantian suku cadang secara dini.
+                <h1 className="text-blue-500 pb-4 text-xl font-semibold" style={{ textAlign: "center" }}>
+                "Kenyamanan udara bukan sekedar pilihan, tetapi investasi untuk produktivitas yang tak ternilai harganya"
                 </h1>
 
                 {/* Latar Belakang Perusahaan */}
@@ -39,9 +35,7 @@ export function Home() {
                     <div className="flex flex-col col-span-6 text-left justify-center">
                         <h1 className="text-gray-700 text-xl pb-4 font-semibold">LATAR BELAKANG PERUSAHAAN</h1>
                         <p className="text-gray-600 pr-4" style={{ textAlign: "justify" }}>
-                            Dalam hal teknis perawatan, kami menerapkan standar terhadap prosedur kerja, pendukung kerja, prinsip "Safety First," serta tanggung jawab dari setiap teknisi kami. 
-                            Kepuasan pelanggan merupakan prioritas utama. Guna mendukung hasil kerja yang maksimal, setiap teknisi dibekali dengan peralatan yang memadai. 
-                            Perawatan rutin yang terencana dengan baik dapat mencegah kerusakan unit AC, mengurangi biaya tidak terduga, serta meminimalkan risiko penggantian suku cadang secara dini.
+                        PT. SCARLET POWER INDONESIA adalah Perusahaan Outsource Service yang bergerak dalam bidang usaha AC ( Air Conditioner ) meliputi : Penjualan, Pemasangan, Perawatan Dan Service AC mempunyai kualifikasi khusus yang dapat memuaskan kebutuhan setiap pelanggan , serta didukung para teknisi yang berpengalaman dan professional di bidangnya.
                         </p>
                     </div>
 

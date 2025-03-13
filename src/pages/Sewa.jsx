@@ -5,27 +5,27 @@ import main from '../assets/main.png'
 const equipmentData = [
     {
         id: 1,
-        name: 'AC Portable',
-        image: 'https://via.placeholder.com/150?text=AC+Portable',
-        description: 'Pendingin ruangan portabel dengan kapasitas 1 PK, cocok untuk ruangan kecil hingga sedang.',
+        name: 'Bor-Bumi',
+        image: 'src\assets\sewa\bor-bumi.png',
+        description: 'Alat pengeboran tanah profesional dengan daya tinggi, ideal untuk proyek konstruksi dan fondasi bangunan. Mampu menembus berbagai jenis tanah dengan efisien.',
     },
     {
         id: 2,
         name: 'Genset',
-        image: 'https://via.placeholder.com/150?text=Genset',
-        description: 'Generator listrik dengan kapasitas 5000 watt, ideal untuk backup listrik rumah atau acara outdoor.',
+        image: 'src\assets\sewa\genset.png',
+        description: 'Generator listrik berkapasitas besar dengan sistem pendingin optimal, cocok untuk backup listrik area industri, proyek konstruksi, atau event berskala besar. Hemat bahan bakar dengan performa stabil.',
     },
     {
         id: 3,
-        name: 'Pompa Air',
-        image: 'https://via.placeholder.com/150?text=Pompa+Air',
-        description: 'Pompa air listrik dengan daya hisap kuat, cocok untuk rumah tangga atau pengairan skala kecil.',
+        name: 'Molen Semen',
+        image: 'src\assets\sewa\molen.png',
+        description: 'Mesin pengaduk semen berkualitas tinggi dengan kapasitas besar, mempercepat proses pengerjaan konstruksi. Dirancang untuk ketahanan dan efisiensi dalam pencampuran material bangunan.',
     },
     {
         id: 4,
-        name: 'Mesin Las',
-        image: 'https://via.placeholder.com/150?text=Mesin+Las',
-        description: 'Mesin las listrik portabel untuk berbagai kebutuhan pengelasan ringan hingga menengah.',
+        name: 'Scaffolding',
+        image: 'src\assets\sewa\scaffolding.png',
+        description: 'Perancah konstruksi dengan struktur kokoh dan fleksibel, memudahkan akses untuk pekerjaan di ketinggian. Sistem pemasangan cepat dengan standar keamanan tinggi untuk berbagai proyek konstruksi dan pemeliharaan gedung.',
     }
 ];
 

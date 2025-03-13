@@ -3,13 +3,12 @@ import { Heading } from '../components/Heading';
 import { Sidebar } from '../components/Sidebar';
 import main from '../assets/main.png';
 
-// Products array
-const products = [
+const equipmentData = [
   {
     id: 1,
     name: 'AC Cassette 1 PK',
     image: 'src/assets/produk/gree5.png',
-    description: 'AC Casette GREE dengan teknologi hemat energi.',
+    description: 'Hemat energi, pendinginan merata 360°, ideal untuk ruang kantor.',
     type: 'cassette',
     brand: 'gree',
   },
@@ -17,7 +16,7 @@ const products = [
     id: 2,
     name: 'AC Ducting 1 PK',
     image: 'src/assets/produk/gree6.png',
-    description: 'Sistem AC Ducting GREE untuk gedung.',
+    description: 'Tersembunyi, distribusi udara optimal, cocok untuk plafon.',
     type: 'ducting',
     brand: 'gree',
   },
@@ -25,7 +24,7 @@ const products = [
     id: 3,
     name: 'AC Standing 3 PK',
     image: 'src/assets/produk/gree7.png',
-    description: 'AC Standing GREE untuk ruangan besar.',
+    description: 'Performa tinggi, mudah dipindahkan, untuk ruangan luas.',
     type: 'standing',
     brand: 'gree',
   },
@@ -33,7 +32,7 @@ const products = [
     id: 4,
     name: 'AC Split Gree 2.5 PK',
     image: 'src/assets/produk/gree8.png',
-    description: 'AC Split GREE dengan teknologi inverter.',
+    description: 'Teknologi inverter, hemat listrik, pendinginan cepat.',
     type: 'split',
     brand: 'gree',
   },
@@ -41,7 +40,7 @@ const products = [
     id: 5,
     name: 'AC Cassette Daikin 1 PK',
     image: 'src/assets/produk/daikin1.png',
-    description: 'AC Casette DAIKIN dengan teknologi hemat energi.',
+    description: 'Aliran udara 4 arah, instalasi mudah, untuk area komersial.',
     type: 'cassette',
     brand: 'daikin',
   },
@@ -49,7 +48,7 @@ const products = [
     id: 6,
     name: 'AC Ducting Daikin 1 PK',
     image: 'src/assets/produk/daikin2.png',
-    description: 'Sistem AC Ducting DAIKIN untuk gedung.',
+    description: 'Minim suara, tekanan statis tinggi, estetika bangunan terjaga.',
     type: 'ducting',
     brand: 'daikin',
   },
@@ -57,7 +56,7 @@ const products = [
     id: 7,
     name: 'AC Standing Daikin 2 PK',
     image: 'src/assets/produk/daikin3.png',
-    description: 'AC Standing DAIKIN untuk ruangan besar.',
+    description: 'Kinerja stabil, tahan lama, ideal untuk ruang meeting.',
     type: 'standing',
     brand: 'daikin',
   },
@@ -65,7 +64,7 @@ const products = [
     id: 8,
     name: 'AC Split Daikin 2.5 PK',
     image: 'src/assets/produk/daikin4.png',
-    description: 'AC Split DAIKIN dengan teknologi inverter.',
+    description: 'Fitur econavi, filter anti bakteri, pengoperasian sunyi.',
     type: 'split',
     brand: 'daikin',
   },
@@ -73,7 +72,7 @@ const products = [
     id: 9,
     name: 'AC Cassette Panasonic 4 PK',  
     image: 'src/assets/produk/panasonic9.png',  
-    description: 'AC Cassette PANASONIC 4 PK dengan teknologi hemat energi dan pendinginan optimal.',  
+    description: 'Kapasitas besar, sensor aktivitas, hemat energi 30%.',  
     type: 'cassette',  
     brand: 'panasonic',  
   },
@@ -81,23 +80,23 @@ const products = [
     id: 10,
     name: 'AC Ducting Panasonic 3 PK',  
     image: 'src/assets/produk/panasonic10.png',  
-    description: 'AC Ducting PANASONIC 3 PK dengan sistem pendinginan tersembunyi untuk kenyamanan maksimal.',  
+    description: 'Tekanan tinggi, fleksibel, cocok untuk multi ruangan.',  
     type: 'ducting',  
     brand: 'panasonic',  
   },
   {
     id: 11,
     name: 'AC Standing Panasonic 5 PK',  
-    image: 'src/assets/produk/panasonic11.png',  
-    description: 'AC Standing PANASONIC 5 PK dengan daya pendinginan kuat dan cocok untuk ruangan besar.',  
+    image: 'src/assets/produk/panasonic12.png',  
+    description: 'Kapasitas industri, aliran udara jauh, tangguh untuk 24/7.',  
     type: 'standing',  
     brand: 'panasonic',  
   },
   {
     id: 12,
     name: 'AC Split Panasonic 2 PK',  
-    image: 'src/assets/produk/panasonic12git commit -m "Menambahkan fitur baru".png',  
-    description: 'AC Split PANASONIC 2 PK dengan teknologi inverter hemat energi dan desain modern.',  
+    image: 'src/assets/produk/panasonic11.png',  
+    description: 'Nanoe-G purifier, mode cepat, desain premium.',  
     type: 'split',  
     brand: 'panasonic'  
   },
@@ -105,16 +104,15 @@ const products = [
     id: 13,
     name: 'AC Cassette LG 7 PK',  
     image: 'src/assets/produk/lg13.png',  
-    description: 'AC Cassette LG 7 PK dengan kapasitas pendinginan besar dan teknologi hemat energi.',  
+    description: 'Multi flow, area luas, kontrol zona individual.',  
     type: 'cassette',  
     brand: 'lg',  
-
   },
   {
     id: 14,
     name: 'AC Ducting LG 5 PK',  
     image: 'src/assets/produk/lg14.png',  
-    description: 'AC Ducting LG 5 PK dengan sistem distribusi udara tersembunyi untuk efisiensi maksimal.',  
+    description: 'ESP tinggi, integrasi BMS, efisiensi maksimal.',  
     type: 'ducting',  
     brand: 'lg',  
   },
@@ -122,7 +120,7 @@ const products = [
     id: 15,
     name: 'AC Standing LG 7 PK',  
     image: 'src/assets/produk/lg15.png',  
-    description: 'AC Standing LG 7 PK dengan daya pendinginan tinggi dan cocok untuk area luas.',  
+    description: 'Blast cooling, tahan kondisi ekstrem, jangkauan luas.',  
     type: 'standing',  
     brand: 'lg',  
   },
@@ -130,7 +128,7 @@ const products = [
     id: 16,
     name: 'AC Split LG 3 PK',  
     image: 'src/assets/produk/lg16.png',  
-    description: 'AC Split LG 3 PK dengan teknologi inverter canggih dan desain elegan.',  
+    description: 'Dual inverter, auto cleaning, smart diagnosis.',  
     type: 'split',  
     brand: 'lg'  
   }
@@ -153,15 +151,19 @@ export function Products() {
   const [typeFilter, setTypeFilter] = useState('all');
   const [brandFilter, setBrandFilter] = useState('all');
 
-  // Filtering logic
-  const filteredEquipment = products.filter(equipment => {
-    const typeMatch = typeFilter === 'all' || equipment.type.toLowerCase() === typeFilter.toLowerCase();
-    const brandMatch = brandFilter === 'all' || equipment.brand.toLowerCase() === brandFilter.toLowerCase();
-    return typeMatch && brandMatch;
-  });
+  // Menambahkan handler yang hilang
+  const handleTypeChange = (e) => {
+    setTypeFilter(e.target.value);
+  };
 
-  const handleTypeChange = (e) => setTypeFilter(e.target.value);
-  const handleBrandChange = (e) => setBrandFilter(e.target.value);
+  const handleBrandChange = (e) => {
+    setBrandFilter(e.target.value);
+  };
+
+  const filteredEquipment = equipmentData.filter(equipment => {
+    return (typeFilter === 'all' || equipment.type === typeFilter) &&
+           (brandFilter === 'all' || equipment.brand === brandFilter);
+  });
 
   return (
     <div className="grid grid-cols-12 w-full h-auto">
