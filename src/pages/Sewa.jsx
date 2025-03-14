@@ -46,9 +46,13 @@ function EquipmentCard({ equipment }) {
             </div>
             <h3 className="text-lg font-semibold mb-2 text-gray-700">{equipment.name}</h3>
             <p className="text-sm text-gray-600">{equipment.description}</p>
+            
+            <a href="https://api.whatsapp.com/send/?phone=6283808481122&text=Saya%20ingin%20tahu%20lebih%20lanjut%20tentang%20Sewa%20Alat%20😄👋">
             <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">
                 Sewa Sekarang
             </button>
+            </a>
+
         </div>
     );
 }
