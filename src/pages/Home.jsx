@@ -1,8 +1,8 @@
-import { getCurrentDate } from "../components/Date";
 import { Heading } from "../components/Heading";
 import { Sidebar } from "../components/Sidebar";
 import main from "../assets/main.png";
 import LogoMarquee from "../components/LogoMarquee.jsx";
+import teknisi from '../assets/teknisi.png'
 
 export function Home() {
     return (
@@ -22,31 +22,31 @@ export function Home() {
 
                 {/* Profil Perusahaan */}
                 <Heading title="PROFIL SPI AC SPECIALIST" />
-                <p className="text-gray-600 py-4 text-left" style={{ textAlign: "justify" }}>
+                <p className="text-gray-600 pt-4 text-left" style={{ textAlign: "justify" }}>
                 Saat ini kenyamanan ruangan menjadi perhatian banyak pihak, terutama bagi dunia industri. Kecenderungan meningkatnya kebutuhan akan lingkungan kerja yang nyaman merupakan sinyalemen bahwa begitu pentingnya sistem pendingin udara yang optimal. Yang pada akhirnya sistem AC yang handal dan profesional harus diterapkan dan disesuaikan untuk memenuhi kebutuhan klien.
                 </p>
 
-                <h1 className="text-blue-500 pb-4 text-xl font-semibold" style={{ textAlign: "center" }}>
-                "Kenyamanan udara bukan sekedar pilihan, tetapi investasi untuk produktivitas yang tak ternilai harganya"
+                <h1 className="text-blue-500 py-12 text-2xl font-thin font-pattaya" style={{ textAlign: "center" }}>
+                "Kenyamanan udara bukan sekedar pilihan, tetapi investasi untuk produktivitas yang tak ternilai harganya."
                 </h1>
 
                 {/* Latar Belakang Perusahaan */}
                 <div className="grid grid-cols-12 justify-center">
                     <div className="flex flex-col col-span-6 text-left justify-center">
                         <h1 className="text-gray-700 text-xl pb-4 font-semibold">LATAR BELAKANG PERUSAHAAN</h1>
-                        <p className="text-gray-600 pr-4" style={{ textAlign: "justify" }}>
+                        <p className="text-gray-600 pr-8" style={{ textAlign: "justify" }}>
                         PT. SCARLET POWER INDONESIA adalah Perusahaan Outsource Service yang bergerak dalam bidang usaha AC ( Air Conditioner ) meliputi : Penjualan, Pemasangan, Perawatan Dan Service AC mempunyai kualifikasi khusus yang dapat memuaskan kebutuhan setiap pelanggan , serta didukung para teknisi yang berpengalaman dan professional di bidangnya.
                         </p>
                     </div>
 
                     {/* Gambar produk */}
-                    <div className="flex flex-col justify-center col-span-6">
-                        <img src="https://placehold.co/600x400?text=Product+Image" alt="Product Image" className="mb-0" />
+                    <div className="flex flex-col justify-center col-span-6 shadow-lg">
+                        <img src={teknisi} alt="Product Image" className="mb-0" />
                     </div>
                 </div>
 
                 {/* Visi & Misi */}
-                <div className="text-left py-4">
+                <div className="text-left py-12">
                     <h1 className="text-gray-700 text-xl font-semibold">VISI</h1>
                     <p className="text-gray-600 pt-4" style={{ textAlign: "justify" }}>
                         Menjadi perusahaan terdepan di bidang jasa perawatan spesialis pendingin yang mengutamakan profesionalisme kerja serta pelayanan prima dengan sepenuh hati.

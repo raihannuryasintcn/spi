@@ -78,14 +78,14 @@ export function About() {
                 </p>
 
                 <h1 className="text-gray-700 text-xl py-4 font-semibold">Selalu Mencari Pengetahuan</h1>
-                <p className="text-gray-600 pb-4">
+                <p className="text-gray-600 pb-12">
                 Berkomitmen pada pendidikan berkelanjutan dan pembelajaran hal-hal baru.
                 </p>
 
                         
 
                 <Heading title="STRUKTUR PERUSAHAAN"/>
-                <div className="flex justify-center items-center py-4">
+                <div className="flex justify-center items-center pt-4 pb-12">
                     <img src={struktur} alt="" />
                 </div>
 

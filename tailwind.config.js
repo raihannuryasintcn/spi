@@ -8,13 +8,18 @@ export default {
   theme: {
     extend: {
       keyframes: {
-        marquee: {
-          '0%': { transform: 'translateX(0%)' },
-          '100%': { transform: 'translateX(-200%)' },
-        },
+          marquee: {
+            '0%': { transform: 'translateX(0%)' },
+            '100%': { transform: 'translateX(-200%)' },
+          },
       },
       animation: {
         marquee: 'marquee 30s linear infinite',
+      },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+        charm: ["Charm", "sans-serif"],
+        pattaya: ['Pattaya','sans-serif']
       },
     },
   },

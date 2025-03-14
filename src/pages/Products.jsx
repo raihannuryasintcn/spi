@@ -22,7 +22,7 @@ const equipmentData = [
         id: 1,
         name: 'AC Split Daikin',
         image: split_daikin,
-        description: 'AC Split Gree 1 PK dengan teknologi hemat energi dan fitur pendinginan cepat.',
+        description: 'AC split premium dari Daikin dengan teknologi canggih untuk kesejukan maksimal.',
         type: 'split',
         brand: 'daikin',
     },
@@ -30,7 +30,7 @@ const equipmentData = [
         id: 2,
         name: 'AC Split Gree',
         image: split_gree,
-        description: 'AC Split Gree 1 PK dengan teknologi hemat energi dan fitur pendinginan cepat.',
+        description: 'AC split hemat energi dari Gree, solusi pendinginan efisien untuk ruangan Anda.',
         type: 'split',
         brand: 'gree',
     },
@@ -38,7 +38,7 @@ const equipmentData = [
         id: 3,
         name: 'AC Split Panasonic',
         image: split_panasonic,
-        description: 'AC Split Gree 1 PK dengan teknologi hemat energi dan fitur pendinginan cepat.',
+        description: 'AC split andal dari Panasonic dengan performa tinggi dan udara lebih bersih.',
         type: 'split',
         brand: 'panasonic',
     },
@@ -46,75 +46,76 @@ const equipmentData = [
         id: 4,
         name: 'AC Standing Daikin',
         image: standing_daikin,
-        description: 'AC Ducting Daikin 2 PK untuk pendinginan area luas dengan distribusi udara merata.',
-        type: 'ducting',
+        description: 'AC standing bertenaga dari Daikin, ideal untuk ruangan luas dan sirkulasi udara optimal.',
+        type: 'standing',
         brand: 'daikin',
     },
     {
         id: 5,
         name: 'AC Standing Gree',
         image: standing_gree,
-        description: 'AC Ducting Daikin 2 PK untuk pendinginan area luas dengan distribusi udara merata.',
-        type: 'ducting',
+        description: 'AC standing kokoh dari Gree dengan pendinginan cepat dan hemat energi.',
+        type: 'standing',
         brand: 'gree',
     },
     {
         id: 6,
         name: 'AC Standing Panasonic',
         image: standing_panasonic,
-        description: 'AC Ducting Daikin 2 PK untuk pendinginan area luas dengan distribusi udara merata.',
-        type: 'ducting',
+        description: 'AC standing tahan lama dari Panasonic, memberikan kesejukan merata di seluruh ruangan.',
+        type: 'standing',
         brand: 'panasonic',
     },
     {
         id: 7,
         name: 'AC Ducting Daikin',
         image: ducting_daikin,
-        description: 'AC Standing Panasonic 3 PK dengan desain elegan dan performa tinggi.',
-        type: 'standing',
+        description: 'AC ducting inovatif dari Daikin, solusi terbaik untuk sistem pendinginan tersembunyi.',
+        type: 'ducting',
         brand: 'daikin',
     },
     {
         id: 8,
         name: 'AC Ducting Gree',
         image: ducting_gree,
-        description: 'AC Standing Panasonic 3 PK dengan desain elegan dan performa tinggi.',
-        type: 'standing',
+        description: 'AC ducting efisien dari Gree, memberikan udara sejuk yang merata di setiap sudut.',
+        type: 'ducting',
         brand: 'gree',
     },
     {
         id: 9,
         name: 'AC Ducting Panasonic',
         image: ducting_panasonic,
-        description: 'AC Standing Panasonic 3 PK dengan desain elegan dan performa tinggi.',
-        type: 'standing',
+        description: 'AC ducting berkinerja tinggi dari Panasonic, menghadirkan kenyamanan optimal.',
+        type: 'ducting',
         brand: 'panasonic',
     },
     {
         id: 10,
-        name: 'AC Casette Daikin',
+        name: 'AC Cassette Daikin',
         image: casette_daikin,
-        description: 'AC Cassette Gree 2.5 PK untuk pendinginan 360 derajat, cocok untuk ruang kantor.',
+        description: 'AC cassette elegan dari Daikin dengan desain modern dan distribusi udara merata.',
         type: 'cassette',
         brand: 'daikin',
     },
     {
         id: 11,
-        name: 'AC Casette Gree',
+        name: 'AC Cassette Gree',
         image: casette_gree,
-        description: 'AC Split Daikin 1.5 PK dengan teknologi inverter untuk penghematan listrik maksimal.',
-        type: 'casette',
+        description: 'AC cassette modern dari Gree, memberikan kesejukan maksimal dengan desain stylish.',
+        type: 'cassette',
         brand: 'gree',
     },
     {
         id: 12,
-        name: 'AC Casette Panasonic',
+        name: 'AC Cassette Panasonic',
         image: casette_panasonic,
-        description: 'AC Ducting Panasonic 3 PK untuk pendinginan area besar dengan kinerja optimal.',
-        type: 'casette',
+        description: 'AC cassette hemat energi dari Panasonic, solusi ideal untuk ruangan dengan plafon tinggi.',
+        type: 'cassette',
         brand: 'panasonic',
     },
 ];
+
 
 function EquipmentCard({ equipment }) {
     return (
@@ -124,10 +125,10 @@ function EquipmentCard({ equipment }) {
                 alt={equipment.name} 
                 className="w-full h-40 object-cover mb-4 rounded transition-transform duration-300 hover:scale-110" 
             />
-            <h3 className="text-lg font-semibold mb-2">{equipment.name}</h3>
+            <h3 className="text-lg font-semibold mb-2 text-gray-700">{equipment.name}</h3>
             <p className="text-sm text-gray-600">{equipment.description}</p>
             <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">
-                Sewa Sekarang
+                Hubungi Kami
             </button>
         </div>
     );

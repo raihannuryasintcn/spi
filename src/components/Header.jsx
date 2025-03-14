@@ -1,6 +1,6 @@
 import { useLocation } from 'preact-iso';
 import { Carousel } from './Carousel'; // Import the Carousel component
-import header from '../assets/header.png'
+import header from '../assets/header.jpg'
 
 
 export function Header() {
@@ -31,7 +31,7 @@ export function Header() {
 							<li key={link.path}>
 								<a 
 									href={link.path} 
-									className={`text-gray-100 text-l font-semibold hover:text-yellow-300 transition duration-300 ${
+									className={`text-gray-100 text-l font-semibold hover:text-yellow-300 hover:text-lg transition-all transition duration-300 ${
 										url === link.path ? 'font-bold text-lg border-b-2 border-white hover:border-yellow-300 transition duration-300' : ''
 									}`}
 								>

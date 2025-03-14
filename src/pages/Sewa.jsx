@@ -12,25 +12,25 @@ const equipmentData = [
         id: 1,
         name: 'Bor Bumi',
         image: bor_bumi,
-        description: 'Pendingin ruangan portabel dengan kapasitas 1 PK, cocok untuk ruangan kecil hingga sedang.',
+        description: 'Mesin bor tanah bertenaga tinggi untuk pengeboran sumur, pertanian, dan konstruksi.',
     },
     {
         id: 2,
         name: 'Genset',
         image: genset,
-        description: 'Generator listrik dengan kapasitas 5000 watt, ideal untuk backup listrik rumah atau acara outdoor.',
+        description: 'Generator listrik 5000 watt, solusi andal untuk cadangan listrik di rumah, proyek, atau acara outdoor.',
     },
     {
         id: 3,
         name: 'Mesin Molen',
         image: molen,
-        description: 'Pompa air listrik dengan daya hisap kuat, cocok untuk rumah tangga atau pengairan skala kecil.',
+        description: 'Mesin molen beton berkualitas tinggi untuk mencampur adukan secara efisien dalam proyek konstruksi.',
     },
     {
         id: 4,
         name: 'Scaffolding',
         image: scaffolding,
-        description: 'Mesin las listrik portabel untuk berbagai kebutuhan pengelasan ringan hingga menengah.',
+        description: 'Rangka scaffolding kokoh dan aman untuk mendukung pekerjaan konstruksi di ketinggian.',
     }
 ];
 
@@ -44,7 +44,7 @@ function EquipmentCard({ equipment }) {
                     className="w-full h-40 object-cover mb-4 rounded transition-transform duration-300 hover:scale-110" 
                 />
             </div>
-            <h3 className="text-lg font-semibold mb-2">{equipment.name}</h3>
+            <h3 className="text-lg font-semibold mb-2 text-gray-700">{equipment.name}</h3>
             <p className="text-sm text-gray-600">{equipment.description}</p>
             <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">
                 Sewa Sekarang
