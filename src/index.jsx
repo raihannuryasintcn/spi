@@ -11,6 +11,8 @@ import { Products } from './pages/Products.jsx';
 import { Clients } from './pages/Clients.jsx';
 import { Sewa } from './pages/Sewa.jsx';
 import { Contact } from './pages/Contact.jsx';
+import { Analytics } from "@vercel/analytics/react"
+
 
 export function App() {
 	return (
@@ -31,6 +33,7 @@ export function App() {
 				</Router>
 			</main>
 			<Footer />
+			<Analytics /> 		
 		</LocationProvider>
 	);
 }
