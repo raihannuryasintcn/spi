@@ -40,7 +40,7 @@ export function Home() {
                     </div>
 
                     {/* Gambar produk */}
-                    <div className="flex flex-col justify-center col-span-6 shadow-lg">
+                    <div className="flex flex-col justify-center col-span-6 shadow-lg h-[260px]">
                         <img src={teknisi} alt="Product Image" className="mb-0" />
                     </div>
                 </div>
