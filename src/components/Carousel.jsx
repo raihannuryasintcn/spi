@@ -1,20 +1,14 @@
-import { useState, useEffect, useRef } from 'preact/hooks';
+import { useState, useEffect, useRef } from "preact/hooks";
 
-import carousel1 from '../assets/carousel/1.webp'
-import carousel2 from '../assets/carousel/2.webp'
-import carousel3 from '../assets/carousel/3.webp'
-import carousel4 from '../assets/carousel/4.webp'
-import carousel5 from '../assets/carousel/5.webp'
+import carousel1 from "../assets/carousel/1.webp";
+import carousel2 from "../assets/carousel/2.webp";
+import carousel3 from "../assets/carousel/3.webp";
+import carousel4 from "../assets/carousel/4.webp";
+import carousel5 from "../assets/carousel/5.webp";
 
 export function Carousel() {
   // Array of image paths - replace with your actual image paths
-  const images = [
-    carousel1,
-    carousel2,
-    carousel3,  
-    carousel4,
-    carousel5
-  ];
+  const images = [carousel1, carousel2, carousel3, carousel4, carousel5];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const intervalRef = useRef(null);
@@ -25,19 +19,17 @@ export function Carousel() {
     if (intervalRef.current) {
       clearInterval(intervalRef.current);
     }
-    
+
     // Start a new interval
     intervalRef.current = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => 
-        (prevIndex + 1) % images.length
-      );
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 5000);
   };
 
   // Start timer on component mount
   useEffect(() => {
     startTimer();
-    
+
     // Clear interval on component unmount
     return () => {
       if (intervalRef.current) {
@@ -53,7 +45,7 @@ export function Carousel() {
 
     // Update image index
     setCurrentImageIndex((prevIndex) => {
-      if (direction === 'next') {
+      if (direction === "next") {
         return (prevIndex + 1) % images.length;
       } else {
         return prevIndex === 0 ? images.length - 1 : prevIndex - 1;
@@ -71,11 +63,11 @@ export function Carousel() {
             src={image}
             alt={`Carousel image ${index + 1}`}
             className={`absolute top-0 left-0 w-full h-full object-cover transition-transform duration-500 ${
-              index === currentImageIndex 
-                ? 'translate-x-0' 
-                : index < currentImageIndex 
-                  ? '-translate-x-full' 
-                  : 'translate-x-full'
+              index === currentImageIndex
+                ? "translate-x-0"
+                : index < currentImageIndex
+                ? "-translate-x-full"
+                : "translate-x-full"
             }`}
           />
         ))}
@@ -83,13 +75,13 @@ export function Carousel() {
 
       {/* Navigation Buttons */}
       <button
-        onClick={() => navigateImage('prev')}
+        onClick={() => navigateImage("prev")}
         className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/50 p-2 rounded-full z-10"
       >
         &#10094;
       </button>
       <button
-        onClick={() => navigateImage('next')}
+        onClick={() => navigateImage("next")}
         className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/50 p-2 rounded-full z-10"
       >
         &#10095;
@@ -106,7 +98,7 @@ export function Carousel() {
               setCurrentImageIndex(index);
             }}
             className={`w-3 h-3 rounded-full ${
-              index === currentImageIndex ? 'bg-white' : 'bg-white/50'
+              index === currentImageIndex ? "bg-white" : "bg-white/50"
             }`}
           />
         ))}
