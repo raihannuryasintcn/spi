@@ -12,14 +12,14 @@ const certificatesData = [
     name: "Gree Authorized Dealer",
     image: gree,
     description:
-      "Sertifikasi sistem manajemen mutu untuk memastikan kualitas layanan terbaik.",
+      "Sertifikasi Dealer Resmi dari Gree.",
   },
   {
     id: 2,
     name: "Daikin Authorized Dealer",
     image: daikin,
     description:
-      "Izin resmi dari pemerintah untuk menjalankan usaha di bidang jasa.",
+      "Sertfikasi Dealer Resmi dari Daikin.",
   },
 ];
 
@@ -31,7 +31,7 @@ function CertificateCard({ certificate }) {
         alt={certificate.name}
         className="w-full h-48 object-contain mb-4"
       />
-      <h3 className="text-lg font-semibold mb-2">{certificate.name}</h3>
+      <h3 className="text-lg text-gray-700 font-semibold mb-2">{certificate.name}</h3>
       <p className="text-sm text-gray-600">{certificate.description}</p>
     </div>
   );
