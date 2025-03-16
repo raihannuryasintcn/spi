@@ -40,22 +40,28 @@ export function Sidebar() {
         </h1>
         <div className="h-28 bg-white grid grid-cols-12 place-items-center text-gray-400  ">
           <a
-            href="https://facebook.com"
+            href="https://www.facebook.com/share/14jjd93s6M/"
+            target="_blank" 
+            rel="noopener noreferrer"
             className=" col-span-4 hover:text-blue-600 transition-all duration-300 hover:scale-125 transform"
           >
             <i className="fa-brands fa-facebook fa-2xl"></i>
           </a>
           <a
-            href="https://twitter.com"
-            className="col-span-4 hover:text-blue-400 transition-all duration-300 hover:scale-125 transform"
+            href="https://www.instagram.com/pt_scarlet_power_indonesia/"
+            target="_blank"
+            rel="noopener noreferrer" 
+            className="col-span-4 hover:text-purple-600 transition-all duration-300 hover:scale-125 transform"
           >
-            <i className="fa-brands fa-twitter fa-2xl "></i>
+            <i className="fa-brands fa-instagram fa-2xl "></i>
           </a>
           <a
-            href="https://youtube.com"
-            className="col-span-4 hover:text-red-600 transition-all duration-300 hover:scale-125 transform"
+            href="https://www.tiktok.com/@scarlet.air.conditioning"
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="col-span-4 hover:text-black transition-all duration-300 hover:scale-125 transform"
           >
-            <i className="fa-brands fa-youtube fa-2xl "></i>
+            <i className="fa-brands fa-tiktok fa-2xl "></i>
           </a>
         </div>
       </div>
