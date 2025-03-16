@@ -25,7 +25,7 @@ export function Header() {
 
       <nav className="flex flex-row bg-gradient-to-t from-red-500 to-red-300 p-2">
         <div className="mx-auto flex justify-center items-center">
-          <ul className="flex justify-between space-x-12">
+          <ul className="flex justify-between space-x-12 xs:text-[60%]">
             {navLinks.map((link) => (
               <li key={link.path}>
                 <a
