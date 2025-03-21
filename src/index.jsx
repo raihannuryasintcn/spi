@@ -14,6 +14,7 @@ import { Contact } from './pages/Contact.jsx';
 import { Analytics } from "@vercel/analytics/react"
 
 
+
 export function App() {
 	return (
 		<LocationProvider>
