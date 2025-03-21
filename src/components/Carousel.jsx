@@ -77,18 +77,20 @@ export function Carousel() {
       <button
         onClick={() => navigateImage("prev")}
         className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/50 p-2 rounded-full z-10"
+        aria-label="Previous Slide"
       >
         &#10094;
       </button>
       <button
         onClick={() => navigateImage("next")}
         className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/50 p-2 rounded-full z-10"
+        aria-label="Next Slide"
       >
         &#10095;
       </button>
 
       {/* Dot Indicators */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10" aria-label="Carousel navigation">
         {images.map((_, index) => (
           <button
             key={index}
@@ -100,6 +102,7 @@ export function Carousel() {
             className={`w-3 h-3 rounded-full ${
               index === currentImageIndex ? "bg-white" : "bg-white/50"
             }`}
+            aria-label={`Slide ${currentImageIndex}`}
           />
         ))}
       </div>
