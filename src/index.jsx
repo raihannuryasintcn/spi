@@ -48,8 +48,20 @@ export function App() {
 }
 
 if (typeof window !== "undefined") {
-  hydrate(<App />, document.getElementById("app"));
-}
+	// Penting: Pastikan target elemen ada sebelum hydration
+	const appElement = document.getElementById("app");
+	if (appElement) {
+	  // Periksa apakah elemen sudah memiliki konten (telah di-prerender)
+	  if (appElement.firstChild) {
+		hydrate(<App />, appElement);
+	  } else {
+		// Jika tidak ada konten, gunakan render biasa (jarang terjadi)
+		import('preact').then(({ render }) => {
+		  render(<App />, appElement);
+		});
+	  }
+	}
+  }
 
 export async function prerender(data) {
   return await ssr(<App {...data} />);
