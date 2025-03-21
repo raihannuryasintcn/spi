@@ -9,7 +9,10 @@ export default defineConfig({
       hostname: 'https://scarletpowerinonesia.com',
     }),    
     preact({
-      prerender: { enabled:true }
+      prerender: { 
+        enabled:true, 
+        renderTarget: '#app'
+      }
     }),
     createHtmlPlugin({
       minify: true,
