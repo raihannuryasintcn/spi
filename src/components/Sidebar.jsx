@@ -45,7 +45,7 @@ export function Sidebar() {
 
             {/* Menambahkan link "Cara Kerja AC" */}
             <div className="my-4">
-                <h1 className="bg-gradient-to-t from-blue-700 to-blue-500 p-4 text-xl text-gray-200 font-bold">NAVIGASI</h1>
+                <h1 className="bg-gradient-to-t from-blue-700 to-blue-500 p-4 text-xl text-gray-200 font-bold">ARTICLE</h1>
                 <ul className="list-none p-0">
                     <li>
                         <a href="/cara-kerja-ac" className="hover:text-blue-500">

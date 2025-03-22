@@ -8,6 +8,7 @@
 	},
 	"dependencies": {
 		"@glidejs/glide": "^3.7.1",
+		"@tailwindcss/typography": "^0.5.16",
 		"axios": "^1.8.1",
 		"dayjs": "^1.11.13",
 		"preact": "^10.26.4",
