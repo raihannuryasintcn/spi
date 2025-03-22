@@ -6,7 +6,7 @@ import preact from '@preact/preset-vite';
 export default defineConfig({
   plugins: [
     sitemap({
-      hostname: 'https://scarletpowerinonesia.com',
+      hostname: 'https://scarletpowerindonesia.com',
     }),    
     preact({
       prerender: { 
