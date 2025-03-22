@@ -11,6 +11,7 @@ import { Products } from './pages/Products.jsx';
 import { Clients } from './pages/Clients.jsx';
 import { Sewa } from './pages/Sewa.jsx';
 import { Contact } from './pages/Contact.jsx';
+import { CaraKerjaAC } from './pages/CaraKerjaAC.jsx' ;
 
 export function App() {
 	return (
@@ -26,6 +27,7 @@ export function App() {
 					<Route path="/sewa" component={Sewa} />
 					<Route path="/contact" component={Contact} />
 					<Route path="/legalitas" component={About} />
+					<Route path="/cara-kerja-ac" component={CaraKerjaAC} />
 
 					<Route default component={NotFound} />
 				</Router>

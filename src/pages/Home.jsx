@@ -2,6 +2,7 @@ import { getCurrentDate } from "../components/Date";
 import { Heading } from "../components/Heading";
 import { Sidebar } from "../components/Sidebar";
 import main from "../assets/main.png";
+import { Helmet } from "react-helmet-async";
 import LogoMarquee from "../components/LogoMarquee.jsx";
 
 export function Home() {
