@@ -35,7 +35,7 @@ export function App() {
               <Route path="/clients" component={Clients} />
               <Route path="/sewa" component={Sewa} />
               <Route path="/contact" component={Contact} />
-              <Route path="/blog/blog1" component={Blog} />
+              <Route path="/blog" component={Blog} />
 			  
 
               <Route default component={NotFound} />

@@ -3,12 +3,11 @@ import { useState, useEffect, useRef } from "preact/hooks";
 import carousel1 from "../assets/carousel/1.webp";
 import carousel2 from "../assets/carousel/2.webp";
 import carousel3 from "../assets/carousel/3.webp";
-import carousel4 from "../assets/carousel/4.webp";
-import carousel5 from "../assets/carousel/5.webp";
+
 
 export function Carousel() {
   // Array of image paths - replace with your actual image paths
-  const images = [carousel1, carousel2, carousel3, carousel4, carousel5];
+  const images = [carousel1, carousel2, carousel3];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const intervalRef = useRef(null);
