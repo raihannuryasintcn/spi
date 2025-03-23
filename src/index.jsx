@@ -19,6 +19,7 @@ import { Sewa } from "./pages/Sewa.jsx";
 import { Contact } from "./pages/Contact.jsx";
 import { Analytics } from "@vercel/analytics/react";
 import { Blog } from "./pages/Blog.jsx"
+import { BlogDetail } from "./pages/BlogDetail.jsx";
 
 export function App() {
   return (
@@ -36,6 +37,8 @@ export function App() {
               <Route path="/sewa" component={Sewa} />
               <Route path="/contact" component={Contact} />
               <Route path="/blog" component={Blog} />
+              <Route path="/blog/:id" component={BlogDetail} />
+
 			  
 
               <Route default component={NotFound} />

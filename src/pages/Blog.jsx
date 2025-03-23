@@ -1,7 +1,7 @@
 import { Heading } from "../components/Heading";
 import { Sidebar } from "../components/Sidebar";
 import main from "../assets/main.png";
-
+import { useState } from "react";
 
 // Dummy blog data (easily replaceable with API or CMS)
 const blogPosts = [
@@ -29,6 +29,8 @@ const blogPosts = [
 ];
 
 export function Blog() {
+  const [expandedPost, setExpandedPost] = useState(null);
+
   return (
     <div className="grid grid-cols-12 w-full h-auto">
       {/* Konten utama */}
@@ -51,10 +53,24 @@ export function Blog() {
           <div key={post.id} className="px-8 py-6 bg-white rounded-lg shadow-md mb-6">
             <Heading title={post.title} />
             <div className="flex items-center justify-center">
-              <img src={post.image} alt={post.title} className="py-4 w-full object-cover rounded-md" />
+              <img
+                src={post.image}
+                alt={post.title}
+                className="py-4 w-full object-cover rounded-md"
+              />
             </div>
-            <p className="text-gray-700 text-lg font-semibold mb-2">{post.title}</p>
-            <p className="text-gray-600 text-justify">{post.content}</p>
+            <p className="text-gray-700 text-lg font-semibold mb-2">
+              {post.title}
+            </p>
+            <p className="text-gray-600 text-justify">
+              {expandedPost === post.id ? post.content : `${post.content.substring(0, 100)}...`}
+            </p>
+            <button
+              onClick={() => setExpandedPost(expandedPost === post.id ? null : post.id)}
+              className="mt-3 text-blue-500 hover:underline"
+            >
+              {expandedPost === post.id ? "Show Less" : "Read More"}
+            </button>
             <div className="text-gray-500 italic mt-4">
               <p>Penulis: {post.author}</p>
               <p>Tanggal: {post.date}</p>
