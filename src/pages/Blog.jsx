@@ -1,52 +1,54 @@
+import { h } from "preact";
+import { SEO } from "../components/seo/SEO";
+import { Analytic } from "../components/Analytic";
 import { Heading } from "../components/Heading";
 import { Sidebar } from "../components/Sidebar";
 import main from "../assets/main.png";
 
-
-// Dummy blog data (easily replaceable with API or CMS)
+// Data Artikel
 const blogPosts = [
   {
     id: 1,
-    title: "Judul Blog Pertama",
+    title: "Cara Kerja AC dan Perbaikan",
     image: "https://dummyimage.com/700x400/496ebd/ffffff.png",
-    content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-              perspiciatis possimus, deserunt earum harum voluptatem cum enim
-              repudiandae soluta, quasi tempore aut, labore minima repellat hic.`,
-    author: "John Doe",
-    date: "Selasa, 10 Maret 2025",
+    content: "AC bekerja dengan prinsip kompresi dan ekspansi refrigeran. Jika AC tidak dingin, periksa freon dan filter udara.",
+    author: "Admin",
+    date: "Senin, 25 Maret 2025",
   },
   {
     id: 2,
-    title: "Judul Blog Kedua",
+    title: "Panduan Troubleshooting AC Tidak Dingin",
     image: "https://dummyimage.com/700x400/496ebd/ffffff.png",
-    content: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem
-              placeat dicta, minima, fugit fugiat accusamus quod reprehenderit
-              voluptate obcaecati quisquam at temporibus harum in eaque deserunt
-              expedita dolore, explicabo mollitia eum ullam autem vel!`,
-    author: "Jane Smith",
-    date: "Rabu, 11 Maret 2025",
+    content: "AC yang tidak dingin bisa disebabkan oleh freon habis, kipas mati, atau sirkulasi udara terganggu.",
+    author: "Admin",
+    date: "Selasa, 26 Maret 2025",
   },
 ];
 
 export function Blog() {
   return (
     <div className="grid grid-cols-12 w-full h-auto">
-      {/* Konten utama */}
+      {/* Tambahkan SEO dan Analytics */}
+      <SEO 
+        title="Cara Kerja AC dan Perbaikan | Scarlet Power Indonesia"
+        description="Pelajari cara kerja AC dan cara memperbaiki AC yang tidak dingin dengan mudah."
+        keywords="cara kerja AC, perbaikan AC, service AC, AC tidak dingin"
+        url="https://scarletpowerindonesia.com/cara-kerja-ac"
+      />
+      <Analytic />
+
+      {/* Konten Utama */}
       <div className="bg-gray-100 w-full p-4 col-span-9">
-        {/* Marquee teks berjalan */}
         <div className="text-red-500 italic">
           <marquee behavior="scroll" direction="left">
-            Selamat Datang di Website resmi PT Scarlet Power Indonesia. Semoga
-            para pengunjung memperoleh informasi bermanfaat di website ini.
+            Selamat Datang di Website PT Scarlet Power Indonesia. Temukan info terbaru tentang AC di sini.
           </marquee>
         </div>
-
-        {/* Gambar utama */}
         <div className="flex items-center pb-4">
           <img src={main} alt="Main Image" className="w-full object-cover" />
         </div>
 
-        {/* Blog Content (Looping dari Data) */}
+        {/* Blog Posts */}
         {blogPosts.map((post) => (
           <div key={post.id} className="px-8 py-6 bg-white rounded-lg shadow-md mb-6">
             <Heading title={post.title} />
