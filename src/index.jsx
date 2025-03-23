@@ -18,7 +18,7 @@ import { Clients } from "./pages/Clients.jsx";
 import { Sewa } from "./pages/Sewa.jsx";
 import { Contact } from "./pages/Contact.jsx";
 import { Analytics } from "@vercel/analytics/react";
-import { BlogDetail } from "./pages/BlogDetail.jsx";
+import { BlogDetail } from "./pages/Blog.jsx";
 
 export function App() {
   return (
