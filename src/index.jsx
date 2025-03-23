@@ -18,7 +18,6 @@ import { Clients } from "./pages/Clients.jsx";
 import { Sewa } from "./pages/Sewa.jsx";
 import { Contact } from "./pages/Contact.jsx";
 import { Analytics } from "@vercel/analytics/react";
-import { Blog } from "./pages/Blog.jsx"
 import { BlogDetail } from "./pages/BlogDetail.jsx";
 
 export function App() {
@@ -36,7 +35,6 @@ export function App() {
               <Route path="/clients" component={Clients} />
               <Route path="/sewa" component={Sewa} />
               <Route path="/contact" component={Contact} />
-              <Route path="/blog" component={Blog} />
               <Route path="/blog/:id" component={BlogDetail} />
 
 			  
