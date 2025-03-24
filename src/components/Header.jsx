@@ -14,7 +14,6 @@ export function Header() {
     { name: "OUR CLIENTS", path: "/clients" },
     { name: "SEWA ALAT", path: "/sewa" },
     { name: "CONTACT", path: "/contact" },
-    { name: "BLOG", path: "/blog" },
 
   ];
 
@@ -32,9 +31,9 @@ export function Header() {
               <li key={link.path}>
                 <a
                   href={link.path}
-                  className={`text-gray-100 text-sm font-semibold hover:text-yellow-300 hover:text-base transition-all duration-300 ${
+                  className={`text-gray-100 text-base font-semibold hover:text-yellow-300 hover:text-lg transition-all duration-300 ${
                     url === link.path
-                      ? "font-bold text-base border-b-2 text-yellow-300 border-white border-yellow-300 transition duration-300"
+                      ? "font-bold text-lg   border-b-2 text-yellow-300 border-white border-yellow-300 transition duration-300"
                       : ""
                   }`}
                 >

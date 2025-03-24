@@ -18,7 +18,8 @@
 		"react-helmet": "^6.1.0",
 		"react-helmet-async": "^2.0.5",
 		"react-i18next": "^15.4.1",
-		"react-router-dom": "^7.4.0"
+		"react-router-dom": "^7.4.0",
+		"wouter-preact": "^3.6.1"
 	},
 	"devDependencies": {
 		"@preact/preset-vite": "^2.9.3",
