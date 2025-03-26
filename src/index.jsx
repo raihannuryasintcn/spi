@@ -19,6 +19,8 @@ import { Sewa } from "./pages/Sewa.jsx";
 import { Contact } from "./pages/Contact.jsx";
 import { Analytics } from "@vercel/analytics/react";
 import { BlogDetail } from "./pages/BlogDetail.jsx";
+import { SEO } from "./components/seo/SEO.jsx";
+
 
 export function App() {
   return (
