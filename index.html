@@ -2,49 +2,43 @@
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="light dark" />
-    <script
-      src="https://kit.fontawesome.com/19c51e4407.js"
-      crossorigin="anonymous"
-    ></script>
-    <script prerender type="module" src="/src/index.jsx"></script>
-    <link href="/src/style.css" rel="stylesheet" />
-
-    <!-- Title & Description -->
-    <title>PT SCARLET POWER INDONESIA</title>
-    <meta
-      name="description"
-      content="PT Scarlet Power Indonesia adalah spesialis AC yang menawarkan layanan konsultasi, penjualan, pemasangan, dan perawatan AC untuk rumah dan industri. Dapatkan solusi AC berkualitas, hemat energi, dan tahan lama untuk kenyamanan udara terbaik."
-    />
-
-    <!-- SEO & Social Media -->
-    <meta name="author" content="PT SCARLET POWER INDONESIA" />
-    <meta property="og:title" content="PT SCARLET POWER INDONESIA" />
-    <meta
-      property="og:description"
-      content="PT Scarlet Power Indonesia adalah spesialis AC yang menawarkan layanan konsultasi, penjualan, pemasangan, dan perawatan AC untuk rumah dan industri."
-    />
-    <meta
-      property="og:image"
-      content="https://scarletpowerindonesia.com/logo.svg"
-    />
-    <meta property="og:url" content="https://scarletpowerindonesia.com" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/logo.ico" />
     <link rel="icon" type="image/svg+xml" href="/logo.svg" />
 
-    <!-- Styles & Scripts -->
-    <link href="/src/style.css" rel="stylesheet" />
-    <script
-      src="https://kit.fontawesome.com/19c51e4407.js"
-      crossorigin="anonymous"
-    ></script>
-    <script type="module" src="/src/index.jsx" defer></script>
+    <!-- FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/19c51e4407.js" crossorigin="anonymous"></script>
 
-    <!-- JSON-LD Schema -->
+    <!-- Styles -->
+    <link href="/src/style.css" rel="stylesheet" />
+
+    <!-- Title & Description -->
+    <title>PT SCARLET POWER INDONESIA</title>
+    <meta name="description" content="PT Scarlet Power Indonesia adalah spesialis AC yang menawarkan layanan konsultasi, penjualan, pemasangan, dan perawatan AC untuk rumah dan industri. Dapatkan solusi AC berkualitas, hemat energi, dan tahan lama untuk kenyamanan udara terbaik." />
+
+    <!-- SEO & Social Media -->
+    <meta name="author" content="PT SCARLET POWER INDONESIA" />
+    <meta property="og:title" content="PT SCARLET POWER INDONESIA" />
+    <meta property="og:description" content="PT Scarlet Power Indonesia adalah spesialis AC yang menawarkan layanan konsultasi, penjualan, pemasangan, dan perawatan AC untuk rumah dan industri." />
+    <meta property="og:image" content="https://scarletpowerindonesia.com/logo.svg" />
+    <meta property="og:url" content="https://scarletpowerindonesia.com" />
+
+    <!-- Google Analytics (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      window.gtag = gtag;
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+
+    <!-- JSON-LD Schema (SEO) -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -54,9 +48,12 @@
         "logo": "https://scarletpowerindonesia.com/logo.svg"
       }
     </script>
+
+    <!-- Main Script -->
+    <script type="module" src="/src/index.jsx" defer></script>
   </head>
+
   <body>
     <div id="app"></div>
-    <script prerender type="module" src="/src/index.jsx"></script>
   </body>
 </html>

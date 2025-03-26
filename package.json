@@ -15,13 +15,14 @@
 		"preact-iso": "^2.9.0",
 		"preact-render-to-string": "^6.5.13",
 		"preact-router": "^4.1.2",
+		"react-helmet-async": "^2.0.5",
 		"react-i18next": "^15.4.1",
 		"wouter-preact": "^3.6.1"
 	},
 	"devDependencies": {
 		"@preact/preset-vite": "^2.9.3",
 		"autoprefixer": "^10.4.20",
-		"eslint": "^8.57.1",
+		"eslint": "^9.23.0",
 		"eslint-config-preact": "^1.5.0",
 		"postcss": "^8.5.3",
 		"tailwindcss": "^3.3.0",

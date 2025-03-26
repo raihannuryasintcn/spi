@@ -1,15 +1,21 @@
 import { useRoute } from "preact-iso/router";
 import { blogPosts } from "../data/blogData";
 import { Sidebar } from "../components/Sidebar";
+import { useEffect } from "preact/hooks";
 
 export function BlogDetail() {
   const { params } = useRoute();
-  const blog = blogPosts.find((post) => post.id === parseInt(params.id));
+  const blogId = parseInt(params.id, 10);
+  const blog = Number.isNaN(blogId) ? null : blogPosts.find((post) => post.id === blogId);
+
+  useEffect(() => {
+    if (!blog) {
+      console.warn(`Blog dengan ID ${params.id} tidak ditemukan.`);
+    }
+  }, [params.id]);
 
   if (!blog) {
-    return (
-      <h1 className="text-center text-red-600">Blog Not Found</h1>
-    );
+    return <h1 className="text-center text-red-600 font-semibold">Blog Not Found</h1>;
   }
 
   return (
@@ -17,21 +23,24 @@ export function BlogDetail() {
       {/* Main Content */}
       <div className="bg-gray-100 w-full p-4 col-span-9">
         <div className="px-8 py-6 bg-white rounded-lg shadow-md mb-6">
-          <h1 className="text-gray-700 text-2xl font-bold">{blog.title}</h1>
+          <h1 className="text-gray-900 text-3xl font-bold">{blog.title}</h1>
           <div className="flex items-center justify-center">
             <img
               src={blog.image}
-              alt={blog.title}
+              alt={blog.title || "Blog Image"}
               className="py-4 w-full object-cover rounded-md"
             />
           </div>
-          <p className="text-gray-600 text-justify">{blog.content}</p>
+          <div
+            className="text-gray-700 leading-relaxed text-justify space-y-4"
+            dangerouslySetInnerHTML={{ __html: blog.content }}
+          />
           <div className="text-gray-500 italic mt-4">
-            <p>Penulis: {blog.author}</p>
-            <p>Tanggal: {blog.date}</p>
+            <p>✍️ Penulis: {blog.author}</p>
+            <p>📅 Tanggal: {blog.date}</p>
           </div>
-          <a href="/" className="text-blue-500 underline mt-4 block">
-            ← Back to Home
+          <a href="/" className="text-blue-500 hover:text-blue-700 underline mt-4 block">
+            ← Kembali ke Beranda
           </a>
         </div>
       </div>
