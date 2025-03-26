@@ -1,29 +1,39 @@
 import sitemap from 'vite-plugin-sitemap';
 import { createHtmlPlugin } from 'vite-plugin-html';
-import { defineConfig } from 'vite';
+import { defineConfig, loadEnv } from 'vite';
 import preact from '@preact/preset-vite';
+import { blogPosts } from './src/data/blogData';
 
-export default defineConfig({
-  plugins: [
-    sitemap({
-      hostname: 'https://scarletpowerindonesia.com',
-    }),    
-    preact({
-      prerender: { 
-        enabled:true, 
-        renderTarget: '#app'
-      }
-    }),
-    createHtmlPlugin({
-      minify: true,
-      inject: {
-        data: {
-          title: "PT SCARLET POWER INDONESIA",
-          description: "PT Scarlet Power Indonesia adalah spesialis AC yang menawarkan layanan konsultasi, penjualan, pemasangan, dan perawatan AC untuk rumah dan industri. Dapatkan solusi AC berkualitas, hemat energi, dan tahan lama untuk kenyamanan udara terbaik. meta otomatis",
+export default defineConfig(({ mode }) => {
+  // Load env variables
+  const env = loadEnv(mode, process.cwd(), '');
+  
+  // Generate dynamic routes for blog posts
+  const blogRoutes = blogPosts.map(post => `/blog/${post.id}`);
+
+  return {
+    plugins: [
+      sitemap({
+        hostname: env.VITE_SITE_URL || 'https://scarletpowerindonesia.com',
+        dynamicRoutes: [
+          '/',
+          ...blogRoutes
+        ]
+      }),    
+      preact({
+        prerender: { 
+          enabled: true, 
+          renderTarget: '#app'
+        }
+      }),
+      createHtmlPlugin({
+        minify: true,
+        inject: {
+          data: {
+            title: env.VITE_SITE_TITLE || 'PT SCARLET POWER INDONESIA',
+          },
         },
-      },
-    }),
-], 
-
-  // Additional configuration if needed
+      }),
+    ], 
+  }
 });
