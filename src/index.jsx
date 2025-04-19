@@ -23,7 +23,7 @@ import { GoogleAnalytic } from "./Analytics/googleAnalytic.jsx";
 
 export function App() {
   return (
-    <LocationProvider>x
+    <LocationProvider>
       <div className="bg-[url(/background.png)] bg-contain bg-fixed bg-blend-overlay bg-black/20 font-poppins">
         <div className="max-w-[1200px] w-full mx-auto py-8 px-16">
           <Header />
